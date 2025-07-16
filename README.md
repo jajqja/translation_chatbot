@@ -95,3 +95,4 @@ python3 transaltion_chatbot/Translation_chatbot_v2/chatbot.py
 - Trong file `app.py` bạn có thể điều chỉnh lại max và min `chunk_size` cho giao diện để phù hợp hơn với một số tác vụ dịch văn bản lớn:
   - Mô hình GPT-3.5 Turbo phù hợp với chunk < 4000 tokens.
   - GPT-4o có thể dùng chunk lớn hơn (tối đa ~128k tokens).
+- Bạn có thể Upload file trong `DataForTest` lên giao diện để test thử triển khai trên giao diện.
