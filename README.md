@@ -20,7 +20,7 @@ Bài báo này đã đề xuất thiết kế một **Multi-Level Memory** để
 - **Short-Term Memory**: Lưu trữ các câu hoặc đoạn gần nhất, giúp duy trì ngữ cảnh ngắn hạn.
 - **Long-Term Memory**: Lưu trữ các tóm tắt, thông tin quan trọng xuyên suốt văn bản.
 
-![Multi-Level Memory Translation Framework](./image/232f8741-a7c7-48bd-827d-7afbc7d90696.png)
+![Multi-Level Memory Translation Framework](./image/Screenshot 2025-06-23 175046.png)
 
 
 Tuy nhiên, cách tiếp cận này chỉ có thể giải quyết tốt 2 thách thức đầu tiên. Vì việc duy trì bộ nhớ này **phụ thuộc nhiều vào LLM** ở mỗi bước, chi phí xử lý sẽ rất cao – điều không phù hợp với bài toán yêu cầu **tối ưu hóa chi phí dịch thuật**.
@@ -60,6 +60,9 @@ Yêu cầu LLM:
 Thực hiện triển khai theo 2 cách:
 - **Phiên bản vòng for thủ công**: phiên bản này sẽ chia chunk sau đó duyệt, dich và trích xuất thông tin từng chunk. Đây là phiên bản đơn giản, dễ cài đặt và dễ kiểm soát (`Translation_chatbot_v1`).
 - **Phiên bản LangGraph**: phiên bản sẽ thực hiện graph hóa workflow. Phiên bản này sẽ phức tạp hơn và cần hiểu về LangGraph, mở rộng tốt cho agent và streaming (`Translation_chatbot_v2`).
+  - Work flow:
+    
+![Workflow](./image/output.png)
 
 ## Cách chạy
 
