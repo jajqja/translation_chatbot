@@ -20,7 +20,7 @@ Bài báo này đã đề xuất thiết kế một **Multi-Level Memory** để
 - **Short-Term Memory**: Lưu trữ các câu hoặc đoạn gần nhất, giúp duy trì ngữ cảnh ngắn hạn.
 - **Long-Term Memory**: Lưu trữ các tóm tắt, thông tin quan trọng xuyên suốt văn bản.
 
-![Multi-Level Memory Translation Framework](./image/Screenshot 2025-06-23 175046.png)
+![Multi-Level Memory Translation Framework](./image/Muti-Memory.png)
 
 
 Tuy nhiên, cách tiếp cận này chỉ có thể giải quyết tốt 2 thách thức đầu tiên. Vì việc duy trì bộ nhớ này **phụ thuộc nhiều vào LLM** ở mỗi bước, chi phí xử lý sẽ rất cao – điều không phù hợp với bài toán yêu cầu **tối ưu hóa chi phí dịch thuật**.
