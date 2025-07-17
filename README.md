@@ -59,7 +59,7 @@ Yêu cầu LLM:
 
 Thực hiện triển khai theo 2 cách:
 - **Phiên bản vòng for thủ công**: phiên bản này sẽ chia chunk sau đó duyệt, dich và trích xuất thông tin từng chunk. Đây là phiên bản đơn giản, dễ cài đặt và dễ kiểm soát (`Translation_chatbot_v1`).
-- **Phiên bản LangGraph**: phiên bản sẽ thực hiện graph hóa workflow. Phiên bản này sẽ phức tạp hơn và cần hiểu về LangGraph, mở rộng tốt cho agent và streaming (`Translation_chatbot_v2`).
+- **Phiên bản LangGraph**: phiên bản sẽ thực hiện graph hóa workflow và tạo structured output bằng Pydantic. Phiên bản này sẽ phức tạp hơn và cần hiểu về LangGraph, mở rộng tốt cho agent và streaming (`Translation_chatbot_v2`).
   - Work flow:
     
 ![Workflow](./image/output.png)
